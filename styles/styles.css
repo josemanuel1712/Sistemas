@@ -212,7 +212,7 @@ main p{
 .datos{
     background-image: linear-gradient(to bottom, #39124ed8 0%, #39124Ed8 100%)
     ,url("../images/datos_bg.png");
-    background-size: contain;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
@@ -221,63 +221,51 @@ main p{
 }
 
 .datos_cart{
-    width: 60vw;
-    height: 35vw;
+    width: 80rem;
+    height: 50rem;
 
-    margin: 5rem 15rem 4rem 0;
+    margin: 5rem 5rem 4rem 2rem;
     padding: 4rem;
     border-radius: 2rem;
+
+    box-shadow: 60px -30px 0 #6E2496;
 
     background-size: cover;
     background-image: url("../images/datos_cart.png");
 
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 
     position: relative;
     z-index: 10;
 }
 
-.datos_emptycart{
-    width: 53vw;
-    height: 28vw;
-
-    border-radius: 2rem;
-
-    background-color: #6E2496;
-    display: block;
-
-    position: absolute;
-    top: 2rem;
-    right: 15vw;
-    z-index: 5;
-}
-
 .datos h2{
     margin: 2rem 0;
 
-    font-size: 5vw;
+    font-size: 7rem;
     text-shadow: 2px 2px 4px #00000057;
 }
 
 .datos_content{
     width: 50%;
 
-    font-size: 1.5vw;
+    font-size: 2.3rem;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
 }
 
 .datos_content h3{
     text-transform: uppercase;
-    margin: 3.5vw 0 0;
+    margin: 4rem 0 0;
     font-weight: 100;
 }
 
 .datos_content h3:first-child{
     margin: 0;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 4rem;
     font-weight: 500;
 }
 
@@ -285,7 +273,23 @@ main p{
     margin: 0;
 }
 
+@media (max-width: 750px){
+    .datos_cart{
+        transform: rotate(90deg);
+    }
 
+    .datos h2{
+        transform: rotate(-90deg);
+    }
+    
+    .datos_content{
+        transform: rotate(-90deg);
+    }
+
+    .datos_emptycart{
+        transform: rotate(90deg);
+    }
+}
 
 /*--- FOOTER ---*/
 footer{

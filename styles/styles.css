@@ -285,10 +285,6 @@ main p{
     .datos_content{
         transform: rotate(-90deg);
     }
-
-    .datos_emptycart{
-        transform: rotate(90deg);
-    }
 }
 
 /*--- FOOTER ---*/

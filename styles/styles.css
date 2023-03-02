@@ -95,11 +95,18 @@ nav a{
     border: solid 0.2rem #ffffff;
 }
 
+@media (max-width: 650px){
+    nav{
+        display: none;
+    }
+}
 
 
 /*--- HERO ---*/
 .hero{
     height: 100vh;
+
+    /* margin-right: 5rem; */
 
     background-image: url("../images/hero.jpg");
     background-position: center;
@@ -121,6 +128,24 @@ nav a{
     font-weight: 100;
     font-style: italic;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (max-width:550px){
+    .hero .container{
+        font-size: 3rem;
+    }
+    .hero span{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:400px){
+    .hero .container{
+        font-size: 2rem;
+    }
+    .hero span{
+        font-size: 5rem;
+    }
 }
 
 
@@ -206,6 +231,23 @@ main p{
     margin: 1.5rem
 }
 
+@media (max-width: 650px){
+    .carts{
+        width: 85%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .cart_item img{
+        width: 60%;
+    }
+
+    .cart_item:hover{
+        transform: scale(97%);
+        translate: 0;
+        box-shadow: 0 0 7px #ffd900d0;
+    }
+}
 
 
 /*--- DATOS ---*/
@@ -275,15 +317,24 @@ main p{
 
 @media (max-width: 750px){
     .datos_cart{
-        transform: rotate(90deg);
+        width: 40rem;
+        height: auto;
+
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 450px){
+    .datos_cart{
+        width: 35rem;
+        margin: 4rem auto;
+        padding: 4rem 0rem;
+        box-shadow: none;
     }
 
-    .datos h2{
-        transform: rotate(-90deg);
-    }
-    
-    .datos_content{
-        transform: rotate(-90deg);
+    .datos h2{    
+        font-size: 6rem;
     }
 }
 
